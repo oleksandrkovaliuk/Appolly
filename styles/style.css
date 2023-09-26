@@ -1,0 +1,14 @@
+h1 {
+    font-family: var(--font-JosefinSans);
+    font-weight: 600px;
+}
+
+h2 {
+    font-family: var(--font-JosefinSans);
+    font-weight: 400px;
+}
+
+h3 {
+    font-family: var(--font-JosefinSans);
+    font-weight: 700px;
+}
