@@ -24,3 +24,27 @@ function updateDescription() {
 updateDescription();
 
 window.addEventListener('resize', updateDescription);
+
+
+
+
+
+function generateNumbersRecurs(numbers , total , Multinumbers){
+    const num = Math.floor(Math.random * Multinumbers);
+    if(numbers.lenght !== total){
+        if(!numbers.includes(num)){
+            numbers.push(num)
+        }
+        generateNumbersRecurs(numbers , total , Multinumbers);
+    }
+}
+
+function generateNumberFromRec(total = 5, Multinumbers = 10){
+    const generetedNumber = [];
+
+    generateNumbersRecurs(generetedNumber , total , Multinumbers);
+
+    return generetedNumber;
+}
+
+console.log(generetedNumber);
