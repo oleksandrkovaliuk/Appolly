@@ -17,7 +17,7 @@
 
 <body>
     <main>
-        <div class="page-width">
+        <div id="main-page" class="page-width">
             <div class="header-and-about-containers">
                 <div class="header-container">
                     <div class="top-block">
@@ -133,7 +133,7 @@
                         </div>
                         <div class="bottom-right-side">
                             <a href="#" class="right-side-text">screenshot</a>
-                            <a href="#" class="right-side-text">block</a>
+                            <a href="./blog.html" class="right-side-text">block</a>
                             <button>
                                 <h2 class="right-side-button-text">download</h2>
                             </button>
@@ -805,7 +805,45 @@
                 </div>
 
                 <div class="slider-container">
-                    <div class="slider-wrap">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <img src="./img/anna.jpg" alt="anna">
+                                    <h3 class="name">Ann Lubin</h3>
+                                    <h4 class="position">Co-Founder</h4>
+                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+                                        feugiat.</h5>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="./img/anna.jpg" alt="anna">
+                                    <h3 class="name">Ann Lubin</h3>
+                                    <h4 class="position">Co-Founder</h4>
+                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+                                        feugiat.</h5>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="./img/anna.jpg" alt="anna">
+                                    <h3 class="name">Ann Lubin</h3>
+                                    <h4 class="position">Co-Founder</h4>
+                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+                                        feugiat.</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
+                    <!-- <div class="slider-wrap">
                         <div class="slides">
                             <img src="./img/anna.jpg" alt="anna">
                             <h3 class="name">Ann Lubin</h3>
@@ -840,7 +878,7 @@
                         <li class="nav-btn"></li>
                         <li class="nav-btn"></li>
                         <li class="nav-btn"></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <div class="section-8">
@@ -881,7 +919,6 @@
                     </div>
                 </div>
             </div>
-
             <footer>
 
                 <div class="footer-info-block-wrap">
@@ -1018,24 +1055,17 @@
                         <div class="news-letter">
                             <h2 class="news-letter-text">news letter</h2>
                             <h3 class="discription">Subscribe our newsletter to get our latest update & news</h3>
-                            <div class="input-send-email">
+                            <form>
                                 <input placeholder="" type="text" id="email" name="email" class="input-email">
                                 <label class="label-email" for="email">Your email address</label>
-                                <svg width="52" height="46" viewBox="0 0 52 46" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="52" height="46" rx="4" fill="#5956E9" />
-                                    <g clip-path="url(#clip0_2_64)">
-                                        <path
-                                            d="M17 24H23V22H17V12.846C17 12.7591 17.0227 12.6737 17.0657 12.5983C17.1088 12.5228 17.1708 12.4599 17.2456 12.4157C17.3204 12.3714 17.4054 12.3475 17.4923 12.3461C17.5791 12.3448 17.6649 12.3661 17.741 12.408L36.203 22.562C36.2814 22.6052 36.3468 22.6686 36.3923 22.7456C36.4378 22.8227 36.4618 22.9105 36.4618 23C36.4618 23.0895 36.4378 23.1773 36.3923 23.2544C36.3468 23.3314 36.2814 23.3948 36.203 23.438L17.741 33.592C17.6649 33.6339 17.5791 33.6552 17.4923 33.6539C17.4054 33.6525 17.3204 33.6286 17.2456 33.5843C17.1708 33.5401 17.1088 33.4772 17.0657 33.4017C17.0227 33.3263 17 33.2409 17 33.154V24Z"
-                                            fill="white" />
+                              <button type="submit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group">
+                                    <path id="Vector" d="M3 12.9996H9V10.9996H3V1.84562C3.00001 1.75873 3.02267 1.67335 3.06573 1.59789C3.1088 1.52242 3.17078 1.45949 3.24558 1.41527C3.32037 1.37106 3.4054 1.34711 3.49227 1.34576C3.57915 1.34442 3.66487 1.36574 3.741 1.40762L22.203 11.5616C22.2814 11.6048 22.3468 11.6682 22.3923 11.7452C22.4378 11.8223 22.4618 11.9101 22.4618 11.9996C22.4618 12.0891 22.4378 12.177 22.3923 12.254C22.3468 12.331 22.2814 12.3945 22.203 12.4376L3.741 22.5916C3.66487 22.6335 3.57915 22.6548 3.49227 22.6535C3.4054 22.6521 3.32037 22.6282 3.24558 22.584C3.17078 22.5397 3.1088 22.4768 3.06573 22.4013C3.02267 22.3259 3.00001 22.2405 3 22.1536V12.9996Z" fill="white"/>
                                     </g>
-                                    <defs>
-                                        <clipPath id="clip0_2_64">
-                                            <rect width="24" height="24" fill="white" transform="translate(14 11)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
+                                    </svg>
+                              </button>
+                            </form>
                         </div>
                     </div>
                     <div class="copyright">
@@ -1051,57 +1081,16 @@
                     </div>
                 </div>
             </footer>
-            <div class="container">
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <div class="slides">
-                                    <img src="./img/anna.jpg" alt="anna">
-                                    <h3 class="name">Ann Lubin</h3>
-                                    <h4 class="position">Co-Founder</h4>
-                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
-                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
-                                        feugiat.</h5>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="slides">
-                                    <img src="./img/anna.jpg" alt="anna">
-                                    <h3 class="name">Ann Lubin</h3>
-                                    <h4 class="position">Co-Founder</h4>
-                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
-                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
-                                        feugiat.</h5>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="slides">
-                                    <img src="./img/anna.jpg" alt="anna">
-                                    <h3 class="name">Ann Lubin</h3>
-                                    <h4 class="position">Co-Founder</h4>
-                                    <h5 class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-                                        nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
-                                        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
-                                        feugiat.</h5>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                      </div>
-                </div>
-            </div>
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 1,
+            perView: 1
+        })
         new Glide('.glide').mount()
     </script>
 
