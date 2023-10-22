@@ -253,14 +253,13 @@ footer .top-block-with-info {
 .footer-info-block-wrap {
     background: var(--Black, #232233);
     margin-top: 240px;
-    padding-top: 240px;
 }
 
 .top-block-container {
-    position: absolute;
+
     width: 100%;
     margin: auto;
-    top: -25%;
+    transform: translateY(-50%);
 }
 
 .logo-link-atc-blocks {
@@ -361,7 +360,8 @@ ul .quick-links {
     width: 100%;
     position: relative;
 }
-form .input-email{
+
+form .input-email {
     color: var(--gray-paragraph);
 
     font-family: var(--font-JosefinSans);
@@ -369,8 +369,9 @@ form .input-email{
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    border:none;
+    border: none;
 }
+
 form .input-email:focus,
 form .input-email:active {
     outline: none;
@@ -380,7 +381,7 @@ form .input-email:active {
 form .input-email:active+.label-email,
 form .input-email:focus+.label-email,
 form .input-email:not(:placeholder-shown)+.label-email {
-    display:none;
+    display: none;
 }
 
 form .label-email {
@@ -397,13 +398,15 @@ form .label-email {
     pointer-events: none;
 
 }
-form button{
+
+form button {
     background-color: var(--Royal-blue);
-    padding:11px 14px;
+    padding: 11px 14px;
     border-radius: 4px;
-    border:unset;
+    border: unset;
     cursor: pointer;
 }
+
 .footer-info-block-wrap .copyright {
     display: flex;
     align-items: center;
@@ -452,6 +455,14 @@ form button{
         flex-direction: column;
         padding-inline: 40px;
     }
+
+    .glide__arrows .glide__arrow.glide__arrow--right {
+        right: -4rem;
+    }
+
+    .glide__arrows .glide__arrow.glide__arrow--left {
+        left: -4rem;
+    }
 }
 
 @media(max-width:1080px) {
@@ -488,7 +499,9 @@ form button{
         font-size: 20px;
         line-height: 30px;
     }
-
+    .section-1 .phone-and-block{
+        padding-inline:39px;
+    }
     .section-2 .app-middle-block-with-phone {
         padding-inline: 35px;
         column-gap: 16px;
@@ -506,7 +519,7 @@ form button{
     }
 
     .app-middle-block-with-phone .app-block-wrap,
-    .app-middle-block-with-phone .app-block-wrap.top {
+    .app-middle-block-with-phone .app-block-wrap.top,.app-middle-block-with-phone .app-block-wrap.right{
         align-items: center;
     }
 
@@ -525,6 +538,14 @@ form button{
         line-height: 30px;
     }
 
+    .glide__arrows .glide__arrow.glide__arrow--right {
+        display: none;
+    }
+
+    .glide__arrows .glide__arrow.glide__arrow--left {
+        display: none;
+    }
+
     .section-4 .flying-phones {
         min-width: 330px;
     }
@@ -535,6 +556,25 @@ form button{
 }
 
 @media(max-width:768px) {
+
+    .main-text {
+        font-family: var(--font-JosefinSans);
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 37.5px;
+        /* 150% */
+        text-transform: uppercase;
+    }
+
+     .discription {
+        font-family: var(--font-JosefinSans);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
 
     header,
     .section-1,
@@ -547,6 +587,7 @@ form button{
         padding-block: 21px;
         padding-inline: 11px;
         max-width: 100px;
+        left:31%;
     }
 
     .bottom-right-side button {
@@ -588,10 +629,18 @@ form button{
         padding-inline: 0px;
     }
 
+    .glide__slider img {
+        border-radius: 20px;
+
+    }
+
     .section-4 .download-app-container {
         padding-inline: 16px;
     }
-
+    .section-4 .flying-phones{
+        max-width: 300px;
+        min-width:unset;
+    }
     .app-middle-block-with-phone .app-phone-center {
         min-width: 214px;
     }
@@ -599,11 +648,12 @@ form button{
     .download-like-start-blocks .block {
         padding-block: 11px 12px;
         padding-inline: 5px 3px;
-        min-width: 96px;
+        min-width: 106px;
     }
 
     .download-and-blocks .download-like-start-blocks {
         gap: 18px;
+        flex-direction: column;
     }
 
     .block .number {
@@ -648,7 +698,14 @@ form button{
     }
 
     .our-team-blocks .block {
-        padding-inline: 15px;
+        padding-inline: unset;
+    }
+.block .discription{
+    padding-inline:10px;
+}
+    .section-8 .news-blocks-wrap {
+        padding-inline: 16px;
+        flex-direction: column;
     }
 
     footer .top-block-with-info {
@@ -657,7 +714,7 @@ form button{
     }
 
     .top-block-with-info .email::after {
-        width: 25%;
+        width: 55%;
         height: 4px;
         bottom: -15%;
         right: unset;
@@ -667,6 +724,17 @@ form button{
     .top-block-with-info .phone {
         flex-direction: column;
         align-items: center;
+    }
+
+    .top-block-container {
+        transform: translateY(-25%);
+        padding-inline: 16px;
+    }
+
+    .logo-link-atc-blocks {
+        flex-direction: column;
+        gap: 60px;
+        padding-inline: 16px;
     }
 }
 
