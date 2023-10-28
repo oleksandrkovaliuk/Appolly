@@ -18,6 +18,7 @@
 <body>
     <main>
         <div class="page-width">
+            <div class="blur-all-page">
             <div class="header-and-about-containers">
                 <div class="header-container">
                     <div class="top-block">
@@ -120,7 +121,7 @@
                     </div>
                     <div class="bottom-block">
                         <div class="bottom-left-side">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <svg id="burger" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group">
                                     <path id="Vector" d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
@@ -142,6 +143,7 @@
                             <img class="logo-block" src="./img/logo-header.png" alt="header-logo">
                         </div>
                     </div>
+                 
                 </div>
 
                 <div class="about-app-container">
@@ -1076,6 +1078,30 @@
                         </div>
                     </div>
                 </footer>
+                </div>
+                <div class="mobile_menu_container">
+                    <div class="bg"></div>
+                    <div class="mobile_menu_wrap">
+                        <svg id="closeBurger" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#5956E9"/>
+                            <g clip-path="url(#clip0_418_262)">
+                            <path d="M18 15.586L22.95 10.636L24.364 12.05L19.414 17L24.364 21.95L22.95 23.364L18 18.414L13.05 23.364L11.636 21.95L16.586 17L11.636 12.05L13.05 10.636L18 15.586Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_418_262">
+                            <rect width="24" height="24" fill="white" transform="translate(6 5)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            <ul>
+                                <li class="menu-list">Home</li>
+                                <li class="menu-list">Home</li>
+                                <li class="menu-list">Home</li>
+                                <li class="menu-list">Home</li>
+                                <li class="menu-list">Home</li>
+                            </ul>
+                    </div>
+                </div>
         </div>
     </main>
 
@@ -1087,6 +1113,14 @@
             perView: 3 , 
             focusAt: 'center',
             animationDuration:600,
+            breakpoints: {
+                1280: {
+                    perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
         })
         GlideCarousel.mount();
 
@@ -1101,6 +1135,7 @@
     </script>
 
     <script src="./js/changeText.js"></script>
+    <script src="./js/showMenu.js"></script>
     <script src="./js/playVide.js"></script>
 </body>
 
