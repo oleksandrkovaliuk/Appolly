@@ -19,6 +19,8 @@
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 18px;
+    max-width:783px;
+    margin:auto;
 }
 
 .under-header-block .home-blog {
@@ -27,6 +29,7 @@
     gap: 10px;
     justify-content: center;
     text-decoration: unset;
+    cursor: pointer;
 }
 
 .home-blog svg {
@@ -93,6 +96,7 @@
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
+
 }
 
 .scroll-pages .numbers::after {

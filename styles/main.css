@@ -27,7 +27,8 @@ img {
     background-size: cover;
     margin-bottom: 120px;
 }
- .mobile_menu_container{
+
+.mobile_menu_container {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,28 +36,30 @@ img {
     right: 0;
     max-width: 1440px;
     margin: auto;
-    transform:  translateX(-200%);
+    transform: translateX(-200%);
     transition: all 0.3s ease;
 }
-.mobile_menu_container .bg{
+
+.mobile_menu_container .bg {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: black;
     opacity: 0.7;
 }
- .mobile_menu_wrap {
+
+.mobile_menu_wrap {
     max-width: 267px;
     background-color: var(--White);
     border-radius: 10px;
-    width:100%;
-    padding-block:67px 39px;
-    padding-inline:40px;
+    width: 100%;
+    padding-block: 67px 39px;
+    padding-inline: 40px;
     position: relative;
-    margin-top:94px;
-    margin-left:40px;
+    margin-top: 94px;
+    margin-left: 40px;
 }
 
 
@@ -348,8 +351,17 @@ footer .top-block-with-info {
     text-transform: uppercase;
 }
 
+.logo-block .social-media a {
+    text-decoration: none;
+}
+
 .logo-block .social-media svg path {
     fill: white;
+    cursor: pointer;
+}
+
+.logo-block .social-media svg:hover path {
+    fill: var(--Royal-blue);
 }
 
 .logo-block .discription {
@@ -476,7 +488,68 @@ form button {
 }
 
 /* footer end */
+/* Style for Units start*/
+.left-news-blocks-wrap .left-news-block {}
 
+.left-news-block .info-under-img {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-inline: 22px;
+    margin-bottom:25px;
+}
+
+.info-under-img .time,
+.info-under-img .person,
+.info-under-img .comment {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.info-under-img .time h2,
+.info-under-img .person h2,
+.info-under-img .comment h2 {
+    color: var(--gray-paragraph);
+
+    font-family: var(--font-JosefinSans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.left-news-block p {
+    color: var(--gray-paragraph);
+
+    font-family: var(--font-JosefinSans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-inline:20px;
+    margin-bottom:20px;
+
+
+}
+.left-news-block p:last-child{
+    margin-bottom:60px;
+}
+.left-news-block p b {
+    color: var(--Royal-blue);
+
+    font-family: var(--font-JosefinSans);
+    font-size: 48.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+
+    text-transform: uppercase;
+}
+
+/* Style for Units end */
 @media(max-width:1350px) {
     .header-and-about-containers {
         padding-left: 40px;
@@ -493,9 +566,10 @@ form button {
 }
 
 @media(max-width:1280px) {
-    .mobile_menu_container{
-        display:none;
+    .mobile_menu_container {
+        display: none;
     }
+
     .section-4 .flying-phones {
         min-width: 570px;
     }
@@ -519,9 +593,10 @@ form button {
 }
 
 @media(max-width:1080px) {
-   .mobile_menu_container{
-        display:block;
+    .mobile_menu_container {
+        display: block;
     }
+
     .bottom-left-side .left-side-text,
     .bottom-right-side .right-side-text {
         display: none;
@@ -798,13 +873,16 @@ form button {
         gap: 60px;
         padding-inline: 16px;
     }
-    .logo-block .discription{
+
+    .logo-block .discription {
         text-align: left;
     }
-    .logo-link-atc-blocks .news-letter{
-        margin-left:unset;
+
+    .logo-link-atc-blocks .news-letter {
+        margin-left: unset;
     }
-    .news-letter .discription{
+
+    .news-letter .discription {
         text-align: left;
     }
 }
