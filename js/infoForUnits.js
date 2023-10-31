@@ -13,6 +13,8 @@ const numberList = document.querySelectorAll("#number-list");
 const numbers = [1, 2, 3, 4, 5];
 const activeNumber = 1;
 
+
+
 function renderingNumberList() {
     let markUp = "";
     for (let i = 0; i < numbers.length; i++) {
@@ -24,7 +26,7 @@ const findSelectedUnit = units.findIndex((selectedUser) => {
     return selectedUser.id === searchUnit;
 })
 const selectedUser = units[findSelectedUnit];
-// console.log(selectedUser.id);
+
 
 
 function renderingUnits(selectedUser){
@@ -37,16 +39,36 @@ function renderingUnits(selectedUser){
 
     numberList.forEach((element) => {
         element.innerHTML = numberListMark;
-        if(numbers[i] === selectedUser.id){
-            // console.log(numbers[i] , "num")
-        }
         })
 }
-// console.log(selectedUser.id);
 renderingUnits(selectedUser);
 
-// swipePage.forEach((number) => {
-// number.addEventListener('click' , () => {
-//         window.location.href = `./blogPixelUnit.html?${selectedUser.id}`, "_self";
-// })
-// })
+
+const rightBlocksContainer = document.querySelector('.right-news-blocks-container');
+function renderingRightSmallBlocks() {
+    let markUpRight = "";
+        smalleUnits.forEach((unit) => {
+            if(unit.id === selectedUser.id){
+                markUpRight += `<a href="./blogUnits.html?unit=${unit.id}" class="rigth-news-block hidden">
+                <div class="img">
+                    <img src="${unit.img}">
+                </div>
+                <div class="news-text">
+                    <h2 class="name-of-news">${unit.title}</h2>
+                </div>
+            </a>`
+            }else{
+                markUpRight += `<a href="./blogUnits.html?unit=${unit.id}" class="rigth-news-block">
+                <div class="img">
+                    <img src="${unit.img}">
+                </div>
+                <div class="news-text">
+                    <h2 class="name-of-news">${unit.title}</h2>
+                </div>
+            </a>`   
+            }
+    })
+    return markUpRight;
+}
+const renderedBlocks = renderingRightSmallBlocks();
+rightBlocksContainer.innerHTML = renderedBlocks;

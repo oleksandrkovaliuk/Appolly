@@ -505,6 +505,7 @@
 .social-media li {
     margin-inline: 31px;
     position: relative;
+    cursor: pointer;
 }
 
 .social-media li:not(:last-child)::before {
