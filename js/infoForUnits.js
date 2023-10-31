@@ -47,17 +47,8 @@ renderingUnits(selectedUser);
 const rightBlocksContainer = document.querySelector('.right-news-blocks-container');
 function renderingRightSmallBlocks() {
     let markUpRight = "";
-        smalleUnits.forEach((unit) => {
-            if(unit.id === selectedUser.id){
-                markUpRight += `<a href="./blogUnits.html?unit=${unit.id}" class="rigth-news-block hidden">
-                <div class="img">
-                    <img src="${unit.img}">
-                </div>
-                <div class="news-text">
-                    <h2 class="name-of-news">${unit.title}</h2>
-                </div>
-            </a>`
-            }else{
+      units.forEach((unit) => {
+            if(unit.id !== selectedUser.id){
                 markUpRight += `<a href="./blogUnits.html?unit=${unit.id}" class="rigth-news-block">
                 <div class="img">
                     <img src="${unit.img}">
@@ -65,7 +56,7 @@ function renderingRightSmallBlocks() {
                 <div class="news-text">
                     <h2 class="name-of-news">${unit.title}</h2>
                 </div>
-            </a>`   
+            </a>`
             }
     })
     return markUpRight;
