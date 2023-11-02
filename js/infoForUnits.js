@@ -63,3 +63,5 @@ function renderingRightSmallBlocks() {
 }
 const renderedBlocks = renderingRightSmallBlocks();
 rightBlocksContainer.innerHTML = renderedBlocks;
+
+ 
